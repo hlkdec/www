@@ -16,3 +16,13 @@ $('.anim2').hover(function(){
 	$('.scr2').toggleClass('scr2_anim anim_sets')
 	$('.scrx').toggleClass('scrx_anim anim_sets')
 });
+
+$(function(){
+  $(".phone").mask("+7 999 999-99-99",{phonelaceholder:'+7 000 000-00-00'});
+})
+$(function() {
+  $("#phone").mask("+7 999 999-99-99", {
+    placeholder: "+7 999 999-99-99",
+    clearIfNotMatch: true
+  });
+});
