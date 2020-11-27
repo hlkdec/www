@@ -10,7 +10,14 @@ $(document).ready(function(){
 		}
 	});
 });
-
+//Animation 1
+$('.anim1').hover(function(){
+	$('.parts_bg').toggleClass('parts_bg-anim anim_sets')
+	$('.bg_part-1').toggleClass('bg_part-1anim anim_sets')
+	$('.bg_part-2').toggleClass('bg_part-2anim anim_sets')
+	$('.phone_part-1').toggleClass('phone_part-1anim anim_sets')
+	$('.phone_part-2').toggleClass('phone_part-2anim anim_sets')
+});
 // Animation 2
 $('.anim2').hover(function(){
 	$('.scr1').toggleClass('scr1_anim anim_sets')
@@ -36,6 +43,7 @@ $(document).ready(function(){
     loop:true,
     margin:20,
     nav:true,
+    dots:false,
     responsive:{
         0:{
             items:1
@@ -54,6 +62,7 @@ $(document).ready(function(){
     loop:true,
     margin:20,
     nav:true,
+    dots:false,
     responsive:{
         0:{
             items:4
@@ -94,4 +103,10 @@ $('.image-link').magnificPopup({
 
 $('.order_btn').hover(function(){
 	$(this).next().toggleClass('order__img-wrap-hover')
+});
+
+
+
+$('.watch__more').on('click',function(){
+	$('.dropdown__menu').toggleClass('d-none')
 });
