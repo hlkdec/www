@@ -27,14 +27,8 @@ $('.anim2').hover(function(){
 
 // Phone mask
 $(function(){
-	$(".phone").mask("+7 999 999-99-99",{phonelaceholder:'+7 000 000-00-00'});
+	$(".enter__phone").mask("+7 999 999-99-99",{phonelaceholder:'+7 000 000-00-00'});
 })
-$(function() {
-	$("#phone").mask("+7 999 999-99-99", {
-		placeholder: "+7 999 999-99-99",
-		clearIfNotMatch: true
-	});
-});
 
 
 // Slider
@@ -63,16 +57,17 @@ $(document).ready(function(){
     margin:20,
     nav:true,
     dots:false,
+    items:4,
     responsive:{
-        0:{
-            items:4
+        650:{
+            items:2
         },
-        600:{
-            items:4
+        768:{
+            items:3
         },
         1000:{
             items:4
-        }
+        },
     }
 })
 });
